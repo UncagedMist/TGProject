@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnEng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="English"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                app:fButtonColor="@color/fbutton_color_transparent"
+                app:shadowColor="@color/fbutton_color_transparent"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="8dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnHindi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Hindi"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                app:fButtonColor="@color/fbutton_color_transparent"
+                app:shadowColor="@color/fbutton_color_transparent"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnKannada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="kannada"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                app:fButtonColor="@color/fbutton_color_transparent"
+                app:shadowColor="@color/fbutton_color_transparent"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="8dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnVietnam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Việt Nam"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                app:fButtonColor="@color/fbutton_color_transparent"
+                app:shadowColor="@color/fbutton_color_transparent"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

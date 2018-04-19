@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MapsActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/map"
+            android:layout_alignLeft="@+id/map"
+            android:layout_alignTop="@+id/map"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civDoctor"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/doctor" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civChef"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/chef" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civPolice"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/police" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civHotels"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/hotels" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civTourist"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/tourist" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/map"
+            android:layout_alignBottom="@+id/map"
+            android:layout_alignRight="@+id/map"
+            android:orientation="horizontal">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnZoomOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                app:fButtonColor="@color/fbutton_color_transparent"
+                app:shadowColor="@color/fbutton_color_transparent"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="8dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnZoomIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                app:fButtonColor="@color/fbutton_color_transparent"
+                app:shadowColor="@color/fbutton_color_transparent"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+</FrameLayout>

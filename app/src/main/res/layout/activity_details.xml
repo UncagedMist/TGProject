@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".Activity.DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgPlace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background"/>
+
+            <TextView
+                android:id="@+id/txtPlaceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:background="@color/overlayBackgroundMenu"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:text="Name Of Place"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#057BD8"
+        android:gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:background="#057BD8"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:text="DESCRIPTION"/>
+
+        </android.support.v7.widget.CardView>
+
+        <VideoView
+            android:id="@+id/vidView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="4dp"
+        android:id="@+id/txtPlaceDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textColor="@android:color/white"
+        android:text="Description of Given Place"
+        android:textSize="18sp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="Trip Duration"/>
+
+                    <TextView
+                        android:id="@+id/txtDuration"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="Weather Winter"/>
+
+                    <TextView
+                        android:id="@+id/txtWinter"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18dp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="Weather Summer"/>
+
+                    <TextView
+                        android:id="@+id/txtSummer"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18dp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="Visit Duration"/>
+
+                    <TextView
+                        android:id="@+id/txtVisitDuration"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="Visit Place 1"/>
+
+                    <TextView
+                        android:id="@+id/txtVisit1"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="Visit Place 2"/>
+
+                    <TextView
+                        android:id="@+id/txtVisit2"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="Visit Place 3"/>
+
+                    <TextView
+                        android:id="@+id/txtVisit3"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="Visit Place 4"/>
+
+                    <TextView
+                        android:id="@+id/txtVisit4"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="Visit Place 5"/>
+
+                    <TextView
+                        android:id="@+id/txtVisit5"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="Package"/>
+
+                    <TextView
+                        android:id="@+id/txtPackage"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="District"/>
+
+                    <TextView
+                        android:id="@+id/txtDistrict"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="100"
+                    android:padding="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:text="State"/>
+
+                    <TextView
+                        android:id="@+id/txtState"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:textSize="18sp"
+                        android:paddingLeft="5dp"
+                        android:textAlignment="center"
+                        android:text="KK"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnCrime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crime Analysis"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                app:fButtonColor="@android:color/white"
+                app:shadowColor="@android:color/background_dark"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnViewOnMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show NearBy Places On Map"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_margin="8dp"
+            app:fButtonColor="@android:color/white"
+            app:shadowColor="@android:color/background_dark"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
